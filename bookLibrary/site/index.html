@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>BackboneJs book Lib</title>
+		<link rel = "stylesheet" href = "css/screen.css">	
+	</head>
+
+	<body>
+	<!-- dis<uplay the input area-->
+		<div id="books">
+			<form id="addBook" action ="#">
+				<div>
+					<label for="coverImage">CoverImage:</label><input id="coverImage" type="file"/>
+					<label for="title">Title:</label><input id="title" type="text">
+					<label for="author">Authour:</label><input id="author" type="text">
+					<label for="releaseDate">Release date:</label><input id="releaseDate" type="date">
+					<label for="keyworks">Keyworks:</label><input id="keyworks" type="text">
+
+					<button id="add">Add</button>
+
+				</div>
+			</form>
+		</div>
+	<!-- script to display the book-->
+	<script id="bookTemplate" type="text/template">
+		<image src = "<%= coverImage %>"/>
+		<ul> 
+			<li><%= title%></li>
+			<li><%=author%></li>
+			<li><%=releaseDate%></li>
+			<li><%=keyworks%></li>
+		</ul>	
+		<button class="delete">Delete</button>				
+	</script>	
+	<!-- include js-->
+		<script src="js/lib/jquery.min.js"></script>
+		<script src="js/lib/underscore-min.js"></script>
+		<script src="js/lib/backbone-min.js"></script>
+		<script src="js/models/book.js"></script>
+		<script src="js/collections/library.js"></script>
+		<script src="js/views/book.js"></script>
+		<script src="js/views/library.js"></script>
+		<script src="js/app.js"></script>
+	</body>		
+</html>
