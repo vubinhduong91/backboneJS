@@ -1,7 +1,7 @@
 backboneJS
 ==========
-
+create by vubinhduong91
 some simple app using backbone.
 
-For more detail guides please visit: http://addyosmani.github.io/backbone-fundamentals/
+Following the guides at: http://addyosmani.github.io/backbone-fundamentals/
  
